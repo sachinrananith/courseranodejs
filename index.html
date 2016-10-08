@@ -1,10 +1,37 @@
 <html>
 <head>
-  <title>Hello COURSERA</title>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <style>body {font-size: 1.3em;}</style>
+  <title>Angular js first application Calculator</title>
+</head>
+<body >
+  <h1>My first angular app</h1>
+  <h2>Name Calculator</h2>
+  <div >
+  <div>Your name: <input type="text"  ng-keyup="displayNumeric();"></div>
+    <div> Total numeric value of person's name is: {{totalvalue}}</div>
+  </div>
+
+  <div >
+      <input type="text" >
+      Inside my input is:{{name}}
+
+  </div>
+</body>
+</html>
+<html ng-app="DIApp">
+<head>
+  <meta charset="utf-8">
+
+  <title>Dependency Injection in Javascript and AngularJS </title>
+
 </head>
 <body>
-  <h1>HELLO COURSERA Students!</h1>
+  <h1>Dependency Injection in Javascript and AngularJS </h1>
+  <div ng-controller="DIController">
+    <input type="text" ng-model="name" ng-blur="upper();">
+  </div>
 </body>
-
-
 </html>
